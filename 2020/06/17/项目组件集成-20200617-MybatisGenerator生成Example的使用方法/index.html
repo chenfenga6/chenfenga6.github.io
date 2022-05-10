@@ -19,13 +19,13 @@
     <meta name="description" content="上篇介绍了SpringBoot整合generator插件的过程以及一些坑。所以本篇文章主要介绍生成出来的实体类、Example、mapper如何进行使用，以及小麻袋在使用过程中遇到的一些问题。  1.Generator插件生成Mapper和Example文件介绍1-1.Mapper文件mapper层接口中主要提供一些关于主键和通过Example类作为参数的方法，如下：    方法 功能说明">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MybatisGenerator生成Example的使用方法">
-<meta property="og:url" content="http://example.com/2020/06/17/20200617-MybatisGenerator%E7%94%9F%E6%88%90Example%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:url" content="http://example.com/2020/06/17/%E9%A1%B9%E7%9B%AE%E7%BB%84%E4%BB%B6%E9%9B%86%E6%88%90-20200617-MybatisGenerator%E7%94%9F%E6%88%90Example%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="上篇介绍了SpringBoot整合generator插件的过程以及一些坑。所以本篇文章主要介绍生成出来的实体类、Example、mapper如何进行使用，以及小麻袋在使用过程中遇到的一些问题。  1.Generator插件生成Mapper和Example文件介绍1-1.Mapper文件mapper层接口中主要提供一些关于主键和通过Example类作为参数的方法，如下：    方法 功能说明">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/index/4.jpg">
 <meta property="article:published_time" content="2020-06-16T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-10T05:40:17.121Z">
+<meta property="article:modified_time" content="2022-05-10T07:48:41.105Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/img/index/4.jpg">
@@ -403,7 +403,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/06/09/20200609-SpringBoot2.x%E6%95%B4%E5%90%88Mybatis-Generator/">
+                      <a href="/2020/06/09/%E9%A1%B9%E7%9B%AE%E7%BB%84%E4%BB%B6%E9%9B%86%E6%88%90-20200609-SpringBoot2.x%E6%95%B4%E5%90%88Mybatis-Generator/">
                         <span class="hidden-mobile">SpringBoot2.x整合MybatisGenerator</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -421,6 +421,26 @@
                   
                 
                 
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"7e9Kn8jMo0AMFwJKGYRAEEkA-gzGzoHsz","appKey":"lXABRCWc5tYMVqBMCddnXrRB","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
 
               </article>
             

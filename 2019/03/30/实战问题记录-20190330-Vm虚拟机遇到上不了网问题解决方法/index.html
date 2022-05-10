@@ -19,13 +19,13 @@
     <meta name="description" content="虚拟机的网络链接方式首先我们先来了解一下VMware网络连接的的三种配置，分别是Bridge 模式、NAT 模式、Host Only 模式。 Bridge 模式VMware桥接模式，也就是将虚拟机的虚拟网络适配器与主机的物理网络适配器进行交接，虚拟机中的虚拟网络适配器可通过主机中的物理网络适配器直接访问到外部网络。简而言之，这就好像在局域网中添加了一台新的、独立的计算机一样。因此，虚拟机也会占用局">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vm虚拟机遇到上不了网问题解决方法">
-<meta property="og:url" content="http://example.com/2019/03/30/20190330-Vm%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%81%87%E5%88%B0%E4%B8%8A%E4%B8%8D%E4%BA%86%E7%BD%91%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:url" content="http://example.com/2019/03/30/%E5%AE%9E%E6%88%98%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95-20190330-Vm%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%81%87%E5%88%B0%E4%B8%8A%E4%B8%8D%E4%BA%86%E7%BD%91%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="虚拟机的网络链接方式首先我们先来了解一下VMware网络连接的的三种配置，分别是Bridge 模式、NAT 模式、Host Only 模式。 Bridge 模式VMware桥接模式，也就是将虚拟机的虚拟网络适配器与主机的物理网络适配器进行交接，虚拟机中的虚拟网络适配器可通过主机中的物理网络适配器直接访问到外部网络。简而言之，这就好像在局域网中添加了一台新的、独立的计算机一样。因此，虚拟机也会占用局">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/index/1.jpg">
 <meta property="article:published_time" content="2019-03-29T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-10T07:45:19.848Z">
+<meta property="article:modified_time" content="2022-05-10T07:48:16.503Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/img/index/1.jpg">
@@ -267,7 +267,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2019/07/06/20190706-MQTT%E5%9C%A8%E6%B6%88%E6%81%AF%E5%88%B0%E8%BE%BE%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E4%B8%AD%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E8%A7%A6%E5%8F%91%E6%96%AD%E7%BA%BF%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
+                      <a href="/2019/07/06/%E5%AE%9E%E6%88%98%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95-20190706-MQTT%E5%9C%A8%E6%B6%88%E6%81%AF%E5%88%B0%E8%BE%BE%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E4%B8%AD%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E8%A7%A6%E5%8F%91%E6%96%AD%E7%BA%BF%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">MQTT在消息到达回调函数中处理数据库操作触发断线问题解决方法</span>
                         <span class="visible-mobile">上一篇</span>
@@ -289,6 +289,26 @@
                   
                 
                 
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"7e9Kn8jMo0AMFwJKGYRAEEkA-gzGzoHsz","appKey":"lXABRCWc5tYMVqBMCddnXrRB","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
 
               </article>
             
